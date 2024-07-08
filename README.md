@@ -10,13 +10,18 @@ The objective of this project is to develop a machine learning system that can p
 # Dataset:
 The UCI Machine Learning Repository provides a labeled dataset for this task. The dataset includes sensor signals collected from the accelerometer and gyroscope of a smartphone carried by participants while performing the activities.
 
+<hr style="border: 1px solid red;">
 # Algorithms to Investigate:
 
-1. Classification Algorithms:
-2. Decision Trees
-3. Random Forest
-4. Support Vector Machines (SVM)
-5. Neural Networks (e.g., Convolutional Neural Networks, Recurrent Neural Networks)
-6. Clustering Algorithms:
-7. K-means Clustering
-8. DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
+| Algorithm Type            | Algorithm                                                     |
+|---------------------------|---------------------------------------------------------------|
+| **Classification Algorithms** |                                                             |
+|                           | 1. Decision Trees                                             |
+|                           | 2. Random Forest                                              |
+|                           | 3. Support Vector Machines (SVM)                              |
+|                           | 4. Neural Networks (e.g., Convolutional Neural Networks, Recurrent Neural Networks) |
+| **Clustering Algorithms**     |                                                             |
+|                           | 5. K-means Clustering                                         |
+|                           | 6. DBSCAN (Density-Based Spatial Clustering of Applications with Noise) |
+
+<hr style="border: 1px solid red;">
