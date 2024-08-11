@@ -64,30 +64,30 @@ def calories(start_time_str, end_time_str, weight_kg, activitylab):
     return calories_burned
 
 ############################################
-# Example to process sensor data from one file and generate MET Total Calories
-sensor_data = pd.read_csv('S021.csv')
-# extract the annotated activity using the label numbers
-act_label = sensor_data['label']
-# extract the timestamp data
-timestamp = sensor_data['timestamp']
-# Assume 70kg weight for application
-weight = 70
-# Initialize variables
-total_cals = 0
-start_time = timestamp[0]
-end_time = timestamp[0]
-activity = act_label[0]
-for i in range(len(timestamp)):
-    # if activity label changes then find the calories for activity
-    if (activity != act_label[i]):
-        # Add to MET Total Calories
-        total_cals = total_cals + calories(start_time, end_time, weight, activity)
-        # Reset for next activity in sensor data
-        activity = act_label[i]
-        start_time = timestamp[i]
-        end_time = timestamp[i]
-    else:
-        # Set end time to next value
-        end_time = timestamp[i]
+# # Example to process sensor data from one file and generate MET Total Calories
+# sensor_data = pd.read_csv('S021.csv')
+# # extract the annotated activity using the label numbers
+# act_label = sensor_data['label']
+# # extract the timestamp data
+# timestamp = sensor_data['timestamp']
+# # Assume 70kg weight for application
+# weight = 70
+# # Initialize variables
+# total_cals = 0
+# start_time = timestamp[0]
+# end_time = timestamp[0]
+# activity = act_label[0]
+# for i in range(len(timestamp)):
+#     # if activity label changes then find the calories for activity
+#     if (activity != act_label[i]):
+#         # Add to MET Total Calories
+#         total_cals = total_cals + calories(start_time, end_time, weight, activity)
+#         # Reset for next activity in sensor data
+#         activity = act_label[i]
+#         start_time = timestamp[i]
+#         end_time = timestamp[i]
+#     else:
+#         # Set end time to next value
+#         end_time = timestamp[i]
 
-print('\nTotal MET Calories: %5.2f' % total_cals)
+# print('\nTotal MET Calories: %5.2f' % total_cals)
