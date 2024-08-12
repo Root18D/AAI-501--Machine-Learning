@@ -1,4 +1,4 @@
-# AAI-501--Machine-Learning
+# Machine Learning Classification for Human Activity Recognition
 Team 
 1. Dheemanth Rajakumar
 2. Andy Malinsky
